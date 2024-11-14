@@ -26,7 +26,7 @@ Once all the files have been compiled, to run the program you need to launch the
 `./[executable name] "[tournament name]" [number of competitors]` <br />
 If \[tournament name\] and \[number of competitors\] are not specified, the program assings default name and number of competitors to the tournament. 
 
-### How to compile quickly and correctyle
+### How to compile quickly and correctly
 A _makefile_ file is available in the repository. To compile quickly and correctly, just type `make` in your terminal. <br />
 Object files (marked with the .o extension) can be removed after the compilation typing `make clean` in your terminal. <br />
 Before executing these commands, make sure the _makefile_ is in the same directory of the source code.
