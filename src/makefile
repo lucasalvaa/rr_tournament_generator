@@ -6,7 +6,7 @@ CC = gcc
 CFLAGS = -Wall -I. -g
 
 # File sorgente
-SRCS = test.c tournament.c matchday.c queue.c match.c
+SRCS = main.c tournament.c matchday.c queue.c match.c
 
 # File oggetto (sostituisce .c con .o nei nomi dei file sorgente)
 OBJS = $(SRCS:.c=.o)
