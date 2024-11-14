@@ -1,24 +1,24 @@
-# Nome dell'eseguibile
+# Executable name
 TARGET = rr_tournament.exe
 
-# Compilatore e flags
+# Compiler and flags
 CC = gcc
 CFLAGS = -Wall -I. -g
 
-# File sorgente
+# Source files
 SRCS = main.c tournament.c matchday.c queue.c match.c
 
-# File oggetto (sostituisce .c con .o nei nomi dei file sorgente)
+# Object files
 OBJS = $(SRCS:.c=.o)
 
-# Regola principale per creare l'eseguibile
+# Main rule to create the executable
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
 
-# Regola per compilare i file oggetto
+# Rule to compile object files
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Regola di pulizia
+# Clean rule
 clean:
 	rm -f $(OBJS)
